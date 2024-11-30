@@ -32,8 +32,9 @@ if st.button("Generate Video"):
         def load_model():
             pipe = DiffusionPipeline.from_pretrained(
                 "damo-vilab/text-to-video-ms-1.7b",
-                torch_dtype=torch.float32,
-                variant="fp16"
+                torch_dtype=torch.float32
+                # ,
+                # variant="fp16"
             )
             return pipe.to("cpu")
 
