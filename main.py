@@ -1,5 +1,5 @@
 # Step 1: Install Necessary Libraries
-#!pip install torch diffusers accelerate
+!pip install torch diffusers accelerate
 
 import streamlit as st
 import torch
